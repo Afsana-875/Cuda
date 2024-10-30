@@ -1,0 +1,583 @@
+/* Basic Setup All Common Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Titillium Web", sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+    font-size: 1.6rem;
+}
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 4.2rem;
+    color:#fff ;
+}
+
+/* .clarfix::after{
+ content: '';
+ display: block;
+ clear: both;
+ height: 0;
+ visibility: hidden;
+ 
+} */
+
+
+/* Basic Setup All Common Css End */
+/* Reusable Components */
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+section{
+    padding: 8rem 0;
+    text-align: center;
+   
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+
+}
+
+h2::after{
+content: '';
+display: block;
+height: 0.4rem;
+background-color: aqua;
+width: 8.5rem;
+margin: auto;
+margin-top: 2rem;
+}
+h3{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+}
+.box{
+    padding: 2%;
+}
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    color: #fff;
+   
+}
+.Services_icon{
+    height: 12rem;
+    margin-bottom: 3.5rem;
+    margin-top: 4.5rem;
+}
+/* Paragraph */
+.des{
+ font-size: 1.8rem;
+ width: 60%;
+ margin-left: 20%;
+ line-height: 3rem;
+}
+/* Paragraph end */
+.btn:link,
+.btn:visited,
+.btn
+{
+    background-color: #333;
+    border-bottom: .3rem solid #000 ;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.5rem 6rem;
+   border-radius: .5rem;
+   display: inline-block;
+   margin-top: 30px;
+   font-size: 1.6rem;
+}
+/* Reusable Components  End*/
+/* Header */
+header{
+    /* background-color: #87509c; */
+    height: 85vh;
+    position: relative;
+    background: linear-gradient(rgba(135, 80, 156, 0.9),rgba(135, 80, 156, 0.9)),url(../Images/3.jpg);
+
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: right;
+   
+
+}
+.logo{
+    margin: 5rem 0;
+}
+
+.logo-img{
+ height: 3.5rem;
+ width: auto;
+ float: left;
+
+}
+
+/* main nav */
+.menu{
+    margin: 5rem 0;
+}
+.list_section{
+    float: right;
+    /* margin: 50px 0; 
+    */
+   
+  }
+.list_section li{
+ display: inline-block;
+ margin-left: 2rem;
+ 
+
+}
+.list_section li a:link,
+.list_section li a:visited{
+    color: #ffff;
+    text-transform: uppercase;
+    padding: .6rem 1rem;
+    border-radius: .5rem;
+    display: inline-block;
+    font-size: 2rem;
+}
+.list_section li:hover  a:link,
+.list_section li:hover  a:visited{
+   background-color: #643a79;
+   
+}
+.active{
+    background-color: #643a79;
+}
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+   text-align: center;
+   font-size: 1.7rem;
+   font-weight: bold;
+   transition: 0.3s;
+}
+.btn-text:link,.btn:visited{
+background-color: #eb7d4b;
+border-color: #eb7d4b;
+}
+/* sticky navigation */ 
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(100, 58, 120, 0.9);
+    padding: 1rem 0;
+}
+.sticky .logo{
+    margin-top: 0;
+} 
+
+
+/* sticky navigation End */
+
+
+/* main nav End*/
+/* Header End*/
+/* Services Section Start */
+.service-section{
+    color: #fff;
+    background-color: #17c2a4;
+    height: 95vh;
+    position: relative;
+    background: linear-gradient(rgba(23, 194, 163, 0.9),rgba(23, 194, 163, 0.9)),url(../Images/1.jpg);
+
+    background-position: center top ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Services Section  End */
+/* team Section Start */
+.team-section{
+    background:linear-gradient(rgba(231, 241, 248, 0.9),rgba(231, 241, 248, 0.9) ),url(../Images/backgorund-team.webp);
+    text-align: center;
+    background-position: center top ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+   
+
+
+}
+.team-section h2{
+    color: #3c4761;
+}
+.team-section h2::after{
+    background-color: #c8d9e5;;
+}
+.team-section h3{
+    color: #27283d;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.role{
+    color: #30bae7;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    margin-top: 1rem;
+}
+.team-section p{
+    color: #3f77b3;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.team-member{
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    border-radius:50% ;
+    height: 20rem;
+    width: 20rem;
+
+}
+.social-link{
+    margin-top: 4.5rem;
+   
+}
+.social-link ul li{
+    display: inline-block;
+    margin: 0 .5rem;
+
+   
+}
+.social-link ul li a{
+    color: #fff;
+ 
+}
+.social-link ul li a:link i::before{
+    background:#bdd1df;
+    width: 3rem;
+    height:3rem ;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: .5rem;
+    border-radius: 50%;
+   
+}
+.social-link ul li a:hover i::before{
+    background-color: #17c2a4;
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+/* team Section  End*/
+/* Skills  Start*/
+.skill-section{
+    background:linear-gradient(rgba(132, 165, 189, 0.9),rgba(140, 184, 216, 0.9) ),url(../Images/skill4.jpeg);
+    text-align: center;
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+   
+   
+}
+
+
+.skill-section h2{
+    color: #3c4761;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.skill-section p{
+    color: #3c4761;
+    font-size: 1.8rem;
+}
+.box h3{
+    color: #3c4761;
+    font-size: 2.4rem;
+    font-weight: bold;
+   
+}
+.skill-section h2::after{
+    background-color: #dfe8ed;
+}
+.skill-section .box{
+    margin-top: 4.5rem;
+}
+svg.radial-progress circle{
+  stroke-width:5;
+}
+svg.radial-progress text{
+   fill: rgb(197, 12, 83);
+   font-size: 1.5rem;
+    }
+svg.web-design circle{
+    stroke: #30bae7;
+    }
+    svg.html-design circle{
+       stroke: #d74680;
+    }
+    svg.graphic-design circle{
+        stroke: #15c7a8;
+    }
+    svg.ui-design circle{
+        stroke: #eb7d4b;
+    }
+/*  Skills Section  End*/
+/* protfolio section  */
+.protfollio-section{
+   
+    background:linear-gradient(rgba(255, 221, 153, 0.6),rgba(255, 221, 153, 0.6)),url(../Images/prot-1.jpeg);
+    text-align: center;
+     background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+  
+}
+.protfollio-section h2{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #393939;
+    margin-top: 3rem;
+}
+.protfollio-section h2::after{
+    background-color: #e5c37f;
+}
+.protfollio-section h4{
+    margin-top: 2rem;
+    color: #393939;
+    font-size: 1.8rem;
+
+}
+.prot-filter{
+    margin: 4.5rem 0;
+}
+.prot-filter button{
+    background-color: #ebc985;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    color: #393939;
+    margin: 0 .5rem;
+}
+.prot-filter button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0.3rem 0.5rem rgba(3, 165, 240, 0.5);
+    transition: 0.5s;
+}
+.protfoliio-img{
+    width: 100%;
+    height: 30rem;
+}
+.protfollio-section .col:nth-child(3){
+    margin-left: 0;
+}
+.btn-prot{
+    background-color: #17c2a4;
+    color: #fff;
+    border: #14a58c;
+    display:inline-block;
+    width: 20%;
+    padding: 1.5rem;
+  margin: 0 auto;
+  border-radius: .5rem;
+}
+.protfollio-section .mixitup-control-acive{
+    background: #fff;
+}
+/* protfolio section  End*/
+/* Testimonial-Section start */
+.testmonial {
+    background:linear-gradient(rgba(215, 70, 128, 0.8),rgba(215, 70, 128, 0.8)),url(../Images/test3.jpeg);
+    text-align: center;
+     background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.testmonial h2{
+ text-align: center;
+ color: #fff;
+ font-size: 4rem;
+ font-weight: bold;
+}
+.testmonial p{
+    text-align: center;
+    color: #fff;
+}
+.testmonial h2::after{
+    background-color: #fff;
+}
+.testmonial .col:nth-child(3){
+    margin-left: 0;
+}
+.testmonial .col:nth-child(1),
+.testmonial .col:nth-child(2){
+    margin-top:4rem;
+}
+.testmonial .col:nth-child(3),
+.testmonial .col:nth-child(4){
+    margin-top:8rem;
+}
+.test-img{}
+.client-phot{
+    width: 8rem;
+    float: left;
+    margin-top: 3rem;
+  
+}
+.client-phot img{
+   height: 10rem;
+   width: 10rem;
+   border-radius: 50%;
+   margin-bottom: 3rem;
+
+}
+.client-review{
+  width: 40rem;
+  float: left;
+}
+.client-review p{
+    font-size: 2.1rem;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.client-review h3{
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: bold;
+}
+.client-review span{
+    color: #fac996;
+    font-size: 1.8rem;
+}
+/* Testimonial-Section  end */
+/* contact start here */
+.contact-section{
+    background: #3c5499;
+    text-align: center;
+    background:linear-gradient(#273a72cc,rgba(39, 57, 113, 0.8)),url(../Images/contact.webp);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.contact-section h2{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.contact-section h2::after{
+    background-color: #273a71;
+}
+.contact-section p{
+color: white;
+font-size: 1.8rem;
+font-weight: 400;
+}
+ .contact-section form{
+ margin-top: 5rem;
+ width:70%;
+ margin-left: 15%;
+
+ 
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+    background-color: #273a72cc;
+    border:.2rem solid #273a71;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    color: #fff;
+    margin: .5rem 0;
+    font-family: "Titillium Web", sans-serif;
+}
+.contact-section form ::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+.btn-submit{
+    background-color: #30bae7;
+    border: 0;
+    width: 30%;
+    margin:  0 auto;
+    margin-top: 4rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    color: #fff;
+    border-bottom: .5rem solid #299ec5;
+    
+}
+.btn-submit:hover{
+    cursor: pointer;
+}
+
+/* contact End here */
+/* footer */
+.footer-section{
+    background-color: #344b8e;
+    padding-top: 3rem;
+    text-align: center;
+    border-top: .5rem solid rgba(164, 172, 196, 0.3);
+    padding-bottom: 1rem;
+   
+    
+}
+
+.footer-section li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+.footer-section li a{
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.footer-section li a:hover{
+  color: #30bae7;
+  cursor: pointer;
+
+}
+  
+/* footer  End*/
